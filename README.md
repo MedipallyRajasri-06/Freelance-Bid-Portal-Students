@@ -297,7 +297,7 @@ npm install
 Configure `backend/.env`:
 ```
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/freelance-portal
+MONGO_URI=mongodb+srv://24eg112d25_db_user:<db_password>@cluster0.5yflzi4.mongodb.net/freelance_bid_portal?appName=Cluster0
 JWT_SECRET=change_this_to_a_random_secret_string
 ```
 > For MongoDB Atlas, replace `MONGO_URI` with your Atlas connection string.
@@ -309,6 +309,7 @@ npm run dev      # nodemon, auto-restarts on changes
 npm start        # plain node
 ```
 Backend runs at: **http://localhost:5000**
+Backend Render on : https://freelance-bid-portal-students.onrender.com
 
 ### 2. Frontend
 
@@ -319,9 +320,11 @@ npm run dev
 ```
 Frontend runs at: **http://localhost:5173**
 (Vite dev server proxies any `/api/*` request to `http://localhost:5000`.)
+frontend vercel on : freelance-bid-portal-students-ds1sy9fij.vercel.app
+
 
 ### 3. Try it out
-1. Open http://localhost:5173 and register two accounts — one as **client**,
+1. Open https://freelance-bid-portal-students.vercel.app and register two accounts — one as **client**,
    one as **student**.
 2. As the client, post a project (`/post-project`).
 3. As the student, go to `/projects`, open that project, and submit a bid.

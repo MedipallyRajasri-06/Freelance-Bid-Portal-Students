@@ -1,0 +1,51 @@
+.bids-stats {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.bs-item {
+  flex: 1;
+  min-width: 100px;
+  background: var(--bg2);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bs-item span { font-family: var(--font-display); font-size: 2rem; font-weight: 800; }
+.bs-item small { font-size: 0.8rem; color: var(--text3); }
+.bs-item.orange span { color: var(--orange); }
+.bs-item.green span { color: var(--green); }
+.bs-item.red span { color: var(--red); }
+
+.my-bids-list { display: flex; flex-direction: column; gap: 10px; }
+
+.my-bid-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  background: var(--bg2);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.my-bid-row:hover { border-color: var(--accent); }
+
+.mbr-left { display: flex; align-items: flex-start; gap: 14px; flex: 1; }
+
+.mbr-title { font-weight: 600; margin-bottom: 3px; }
+.mbr-proposal { color: var(--text2); font-size: 0.85rem; }
+
+.mbr-right { display: flex; align-items: center; gap: 16px; font-size: 0.85rem; }
+.mbr-amount { font-family: var(--font-display); font-weight: 700; color: var(--green); font-size: 1.1rem; }
